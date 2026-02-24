@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTE RUN | Season Original</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+
+
+    <!-- Tipografías -->
+    <link href="https://fonts.googleapis.com/css2?family=Burbank+Big+Condensed:wght@900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar" aria-label="Menú principal">
+        <div class="logo">UTE<span>RUN</span></div>
+
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#descripcion">Descripción</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#personajes">Personajes</a></li>
+            <li><a href="#jugabilidad">Jugabilidad</a></li>
+        </ul>
+
+        <!-- Menú hamburguesa -->
+        <button 
+            class="menu-icon" 
+            id="hamburger"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 class="main-title">UTE<br>RUN</h1>
+            <p class="hero-subtitle">¡Llega a tiempo a clase o pierde el semestre!</p>
+            <button class="btn-play" aria-label="Jugar UTE RUN">Play Now</button>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="content">
+
+        <!-- DESCRIPCIÓN -->
+        <section class="section-container" id="descripcion">
+            <h2 class="section-label">Descripción</h2>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <h3>¿Qué es UTE RUN?</h3>
+                    <p>
+                        UTE RUN es un videojuego arcade en 3D del género <strong>Endless Runner</strong>,
+                        donde el jugador debe avanzar sin detenerse mientras esquiva obstáculos y supera retos constantes.
+                        Está inspirado en títulos como <em>Crossy Road</em>, pero ambientado en la vida universitaria,
+                        combinando velocidad, reflejos y toma de decisiones.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Plataformas</h3>
+                    <ul class="platform-tags">
+                        <li>PC / Web (Disponible)</li>
+                        <li>Android (Próximamente)</li>
+                        <li>iOS (Próximamente)</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- HISTORIA -->
+        <section class="section-container" id="historia">
+            <h2 class="section-label">Historia</h2>
+
+            <div class="history-box">
+                <figure class="history-image">
+                    <img src="imagenes/ute.jpg" alt="Mapa del campus universitario en UTE RUN">
+                    <figcaption class="status-tag">¡La clase empieza!</figcaption>
+                </figure>
+
+                <div class="history-info">
+                    <h3>Estrés en el campus</h3>
+                    <p>
+                        Faltan solo dos minutos para el examen final y el tiempo corre en tu contra.
+                        Desde que sales de casa, la ciudad se convierte en un recorrido 3D lleno de obstáculos,
+                        tráfico y caminos inesperados.
+                        Cada decisión es crucial para llegar a tiempo y evitar reprobar.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONAJES -->
+        <section class="section-container" id="personajes">
+            <h2 class="section-label">Personajes</h2>
+
+            <div class="skins-grid">
+                <article class="skin-card legendary">
+                    <div class="skin-img">
+                        <img src="imagenes/personaje_h.jpg" alt="Personaje estudiante masculino" class="char-model">
+                    </div>
+                    <div class="skin-details">
+                        <span class="rarity">Estudiante</span>
+                        <h3>El Estudiante Veloz</h3>
+                        <p>Personaje masculino especializado en esquivar obstáculos y avanzar rápidamente.</p>
+                    </div>
+                </article>
+
+                <article class="skin-card epic">
+                    <div class="skin-img">
+                        <img src="imagenes/personaje_m.jpg" alt="Personaje estudiante femenino" class="char-model">
+                    </div>
+                    <div class="skin-details">
+                        <span class="rarity">Estudiante</span>
+                        <h3>La Estratega</h3>
+                        <p>Personaje femenina ágil y estratégica, experta en tomar atajos y planear rutas.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- JUGABILIDAD -->
+        <section class="section-container" id="jugabilidad">
+            <h2 class="section-label">Jugabilidad</h2>
+
+            <div class="features-list">
+                <article class="feature-item">
+                    <span class="feature-icon">🎮</span>
+                    <div>
+                        <h4>Mecánicas arcade</h4>
+                        <p>Controles simples para saltar y moverte lateralmente.</p>
+                    </div>
+                </article>
+
+                <article class="feature-item">
+                    <span class="feature-icon">🧊</span>
+                    <div>
+                        <h4>Entorno 3D</h4>
+                        <p>Escenarios tridimensionales con profundidad y estilo visual atractivo.</p>
+                    </div>
+                </article>
+
+                <article class="feature-item">
+                    <span class="feature-icon">⚡</span>
+                    <div>
+                        <h4>Características especiales</h4>
+                        <p>Power-ups, clima dinámico y niveles infinitos generados al azar.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h2>Conclusión</h2>
+        <p>
+            UTE RUN combina la simplicidad de un arcade con el desafío de la supervivencia universitaria.
+            ¿Tienes lo necesario para llegar a tiempo?
+        </p>
+        <small class="copyright">© 2026 UTE RUN Studios</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
