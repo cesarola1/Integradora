@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- NAVEGACIÓN -->
@@ -28,13 +30,7 @@
         </ul>
 
         <!-- Menú hamburguesa -->
-        <button 
-            class="menu-icon" 
-            id="hamburger"
-            aria-label="Abrir menú"
-            aria-expanded="false"
-            aria-controls="nav-menu"
-        >
+        <button class="menu-icon" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
             <span></span>
             <span></span>
             <span></span>
@@ -61,10 +57,8 @@
                 <article class="info-card">
                     <h3>¿Qué es UTE RUN?</h3>
                     <p>
-                        UTE RUN es un videojuego arcade en 3D del género <strong>Endless Runner</strong>,
-                        donde el jugador debe avanzar sin detenerse mientras esquiva obstáculos y supera retos constantes.
-                        Está inspirado en títulos como <em>Crossy Road</em>, pero ambientado en la vida universitaria,
-                        combinando velocidad, reflejos y toma de decisiones.
+                        UTE RUN es un videojuego arcade en 3D del género <strong>Endless Runner</strong>, donde el jugador debe avanzar sin detenerse mientras esquiva obstáculos y supera retos constantes. Está inspirado en títulos como <em>Crossy Road</em>,
+                        pero ambientado en la vida universitaria, combinando velocidad, reflejos y toma de decisiones.
                     </p>
                 </article>
 
@@ -92,10 +86,8 @@
                 <div class="history-info">
                     <h3>Estrés en el campus</h3>
                     <p>
-                        Faltan solo dos minutos para el examen final y el tiempo corre en tu contra.
-                        Desde que sales de casa, la ciudad se convierte en un recorrido 3D lleno de obstáculos,
-                        tráfico y caminos inesperados.
-                        Cada decisión es crucial para llegar a tiempo y evitar reprobar.
+                        Faltan solo dos minutos para el examen final y el tiempo corre en tu contra. Desde que sales de casa, la ciudad se convierte en un recorrido 3D lleno de obstáculos, tráfico y caminos inesperados. Cada decisión es crucial para llegar a tiempo y evitar
+                        reprobar.
                     </p>
                 </div>
             </div>
@@ -167,12 +159,21 @@
     <footer class="footer">
         <h2>Conclusión</h2>
         <p>
-            UTE RUN combina la simplicidad de un arcade con el desafío de la supervivencia universitaria.
-            ¿Tienes lo necesario para llegar a tiempo?
+            UTE RUN combina la simplicidad de un arcade con el desafío de la supervivencia universitaria. ¿Tienes lo necesario para llegar a tiempo?
         </p>
         <small class="copyright">© 2026 UTE RUN Studios</small>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("./sw.js")
+                    .then(reg => console.log("Service Worker registrado:", reg.scope))
+                    .catch(err => console.error("Error SW:", err));
+            });
+        }
+    </script>
 </body>
+
 </html>
