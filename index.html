@@ -13,6 +13,9 @@
 
     <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ff3c00">
+
 </head>
 
 <body>
@@ -165,15 +168,15 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker.register("./sw.js")
-                    .then(reg => console.log("Service Worker registrado:", reg.scope))
-                    .catch(err => console.error("Error SW:", err));
-            });
-        }
-    </script>
 </body>
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("./sw.js")
+                .then(reg => console.log("Service Worker registrado:", reg.scope))
+                .catch(err => console.error("Error SW:", err));
+        });
+    }
+</script>
 
 </html>
